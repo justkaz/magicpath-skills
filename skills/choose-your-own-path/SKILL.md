@@ -51,23 +51,23 @@ For every datasource, explain that it is most likely where the user runs a/b tes
 Before creating designs, check MagicPath CLI auth and project context:
 
 ```bash
-npx magicpath-ai info -o json
-npx magicpath-ai whoami
+npx -y magicpath-ai@beta info -o json
+npx -y magicpath-ai@beta whoami
 ```
 
 If the CLI is unavailable, tell the user to install or run it with:
 
 ```bash
-npm install -g magicpath-ai
+npm install -g magicpath-ai@beta
 ```
 
 or use the project-local invocation:
 
 ```bash
-npx magicpath-ai <command>
+npx -y magicpath-ai@beta <command>
 ```
 
-If auth is missing, run the MagicPath login flow or tell the user to log in, then verify again. Prefer `-o json` for data-returning commands. Discover the current CLI surface with `npx magicpath-ai --help` and command-specific help when creating or submitting new designs. Choose the CLI route that fits the installed version rather than assuming one fixed command exists.
+If auth is missing, run the MagicPath login flow or tell the user to log in, then verify again. Prefer `-o json` for data-returning commands. Discover the current CLI surface with `npx -y magicpath-ai@beta --help` and command-specific help when creating or submitting new designs. Choose the CLI route that fits the installed version rather than assuming one fixed command exists.
 
 ## Quest Flow
 
@@ -77,17 +77,17 @@ Once datasource access, quest board access, and MagicPath are ready:
 2. **Mint a fresh `CYOP: <descriptor>` MagicPath project.** Distill the test name from Step 1 into a short title-cased descriptor (the most distinguishing noun phrase, no filler). Always lead with the literal prefix `CYOP: ` (with trailing colon-space). Keep the whole name under 50 characters so it's scannable in the project picker. Use the CLI directly:
 
    ```bash
-   npx magicpath-ai create-project \
+   npx -y magicpath-ai@beta create-project \
      --name "CYOP: <descriptor>" \
      --team "<team-name-or-id>" \
      -o json
    ```
 
-   - Default `--team` to the user's primary team (`npx magicpath-ai list-teams -o json` if they belong to multiple — ask before minting).
+   - Default `--team` to the user's primary team (`npx -y magicpath-ai@beta list-teams -o json` if they belong to multiple — ask before minting).
    - Capture `.id` from the response — every later `code start --project <id>` uses **this** project, never an old one.
    - Save the project URL (`https://www.magicpath.ai/projects/<id>`) — it's the destination of the ticket card's primary CTA in Step 12.
    - Confirm the name out loud: "Minted `CYOP: <descriptor>` — all 8 designs from this run will land there."
-   - Fallback (only if `create-project` errors): instruct the user to mint at `https://www.magicpath.ai/projects/new` with the exact name, then read the ID from `npx magicpath-ai active-project -o json`.
+   - Fallback (only if `create-project` errors): instruct the user to mint at `https://www.magicpath.ai/projects/new` with the exact name, then read the ID from `npx -y magicpath-ai@beta active-project -o json`.
 
    **Examples:**
 
