@@ -85,9 +85,9 @@ Once datasource access, quest board access, and MagicPath are ready:
 
    - Default `--team` to the user's primary team (`npx -y magicpath-ai list-teams -o json` if they belong to multiple — ask before minting).
    - Capture `.id` from the response — every later `code start --project <id>` uses **this** project, never an old one.
-   - Save the project URL (`https://www.magicpath.ai/projects/<id>`) — it's the destination of the ticket card's primary CTA in Step 12.
+   - Save the project URL (`https://www.magicpath.ai/files/<id>`) — it's the destination of the ticket card's primary CTA in Step 12.
    - Confirm the name out loud: "Minted `CYOP: <descriptor>` — all 8 designs from this run will land there."
-   - Fallback (only if `create-project` errors): instruct the user to mint at `https://www.magicpath.ai/projects/new` with the exact name, then read the ID from `npx -y magicpath-ai active-project -o json`.
+   - Fallback (only if `create-project` errors): instruct the user to mint at `https://www.magicpath.ai/files/new` with the exact name, then read the ID from `npx -y magicpath-ai active-project -o json`.
 
    **Examples:**
 
@@ -163,7 +163,7 @@ Create the project management task with:
 End with a short "Quest complete" summary listing, in order:
 1. The datasource and quest board (the loadout, in one line).
 2. The **ticket-card preview link** (called out first — it's the single shareable URL).
-3. **The Step 2 project URL** (`https://www.magicpath.ai/projects/<id>`) — the home for all 8 designs, named `CYOP: <descriptor>`.
+3. **The Step 2 project URL** (`https://www.magicpath.ai/files/<id>`) — the home for all 8 designs, named `CYOP: <descriptor>`.
 4. The replication-playbook preview link (so a teammate can repeat the run).
 5. The data-summary preview link.
 6. The five variation preview links.

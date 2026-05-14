@@ -113,12 +113,12 @@ npx -y magicpath-ai create-project \
 - The command returns a JSON payload — capture `.id` for `--project` flags downstream and `.ownerName` to confirm the team in the user-facing summary.
 - Default `--team` to the user's primary team. If the user belongs to multiple teams (check `npx -y magicpath-ai list-teams -o json`), ask which one before minting.
 - Omit `--team` only when the user explicitly wants a personal project; in that case the project lands under their personal namespace.
-- Verify the response — if `create-project` errors (offline, auth, version drift), only then fall back to the manual flow: ask the user to mint at `https://www.magicpath.ai/projects/new` with the exact `Run The Room: <descriptor>` name, then read the ID from `npx -y magicpath-ai active-project -o json`.
+- Verify the response — if `create-project` errors (offline, auth, version drift), only then fall back to the manual flow: ask the user to mint at `https://www.magicpath.ai/files/new` with the exact `Run The Room: <descriptor>` name, then read the ID from `npx -y magicpath-ai active-project -o json`.
 
 **Capture and reuse:**
 
 - Save the new project ID locally for the rest of the run — every subsequent `code start --project <id>` uses this new project, never an old one.
-- Save the project URL (`https://www.magicpath.ai/projects/<id>`) — this is the **destination of the Step 9 cover's primary CTA**.
+- Save the project URL (`https://www.magicpath.ai/files/<id>`) — this is the **destination of the Step 9 cover's primary CTA**.
 - Confirm the name out loud back to the user: "Minted `Run The Room: <descriptor>` — all 4–6 components from this run will land there."
 
 ### Step 2 — Pull all relevant tickets from the quest board
@@ -198,7 +198,7 @@ The capstone-of-the-capstone. After every other component is shipped, build **on
 
 **The main CTA on this cover must be the project URL minted in Step 1** — the fresh `Run The Room: <descriptor>` project, not the personal default project, not an individual component. The cover is just the door; the room IS that project.
 
-**Use the project URL from Step 1.** Format: `https://www.magicpath.ai/projects/<id>` where `<id>` is the project ID minted in Step 1. Never hand-construct a different URL or substitute a stale project.
+**Use the project URL from Step 1.** Format: `https://www.magicpath.ai/files/<id>` where `<id>` is the project ID minted in Step 1. Never hand-construct a different URL or substitute a stale project.
 
 **Cover structure:**
 
@@ -219,7 +219,7 @@ Build this component **after** the Runbook (Step 8) so every preview link the co
 End with a "Sprint room ready" summary listing, in order:
 1. The chosen exercise (one line)
 2. **The Sprint Room Ready cover preview link** (called out first — it's the single Slack-able URL that contains the project-file CTA)
-3. **The Step 1 project URL** (`https://www.magicpath.ai/projects/<id>`) — the destination of the cover's main CTA, named `Run The Room: <descriptor>`
+3. **The Step 1 project URL** (`https://www.magicpath.ai/files/<id>`) — the destination of the cover's main CTA, named `Run The Room: <descriptor>`
 4. The Sprint Runbook preview link
 5. The Sprint Tasks Board preview link
 6. The Data Analysis preview link

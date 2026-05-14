@@ -69,13 +69,13 @@ The `cli.version` field should be `2.x.y` (current stable, e.g. `2.0.0`). The CL
 
 ### Step 2 — Log into MagicPath
 
-The CLI needs OAuth against the **preview** environment (`preview.magicpath.ai`). Browser flow is ~10 seconds; the user has to sign in, Claude can't do it for them.
+The CLI needs OAuth against the **preview** environment (`magicpath.ai`). Browser flow is ~10 seconds; the user has to sign in, Claude can't do it for them.
 
 ```bash
 magicpath-ai login
 ```
 
-This opens a browser to `preview.magicpath.ai/auth/cli?port=...`. User authorizes, the CLI captures the token, and subsequent commands are authed. Verify with:
+This opens a browser to `magicpath.ai/auth/cli?port=...`. User authorizes, the CLI captures the token, and subsequent commands are authed. Verify with:
 
 ```bash
 magicpath-ai whoami -o json
