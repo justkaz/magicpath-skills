@@ -55,13 +55,13 @@ npx -y magicpath-ai@beta info -o json
 npx -y magicpath-ai@beta whoami
 ```
 
-If the CLI is unavailable, tell the user to install or run it with:
+If the CLI is unavailable, tell the user to install MagicPath's official `magicpath` skill — it wraps the CLI install + auth in one command:
 
 ```bash
-npm install -g magicpath-ai@beta
+npx skills add https://github.com/magicpathai/agent-skills --skill magicpath
 ```
 
-or use the project-local invocation:
+Once installed, the `/magicpath` skill handles CLI invocations. You can also call the CLI directly via npx without the skill bundle:
 
 ```bash
 npx -y magicpath-ai@beta <command>

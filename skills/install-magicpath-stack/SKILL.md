@@ -47,30 +47,25 @@ test -f ./.mcp.json && echo "project mcp config exists" || echo "no project mcp 
 
 From that output, report back what's installed vs. missing. Don't install what's already there.
 
-### Step 1 — Install the MagicPath CLI
+### Step 1 — Install the MagicPath skill
 
-The CLI is a regular npm package. Beta track is what the `/mixpanel-to-magicpath-to-linear` skill targets:
+MagicPath ships an official Claude Code skill that wraps the CLI install, auth, and runtime invocations. One command:
 
 ```bash
-npm install -g magicpath-ai@beta
+npx skills add https://github.com/magicpathai/agent-skills --skill magicpath
 ```
 
-**If this fails with `EACCES`** (macOS default), two options — present both to the user:
+This installs the `magicpath` skill into `~/.claude/skills/` and pulls down the MagicPath CLI as part of its setup. No EACCES dance, no nvm/volta debate, no sudo discussion — the skills CLI handles install scoping itself.
 
-- **Preferred:** use a Node version manager (nvm, volta, asdf) so npm can install globally without sudo. Don't prescribe a specific manager; ask the user which they use.
-- **Fast path:** skip the global install and use `npx -y magicpath-ai@beta` at every call site. It's slower per-invocation (cache warm-up on first run) but avoids the permission issue entirely. The `/mixpanel-to-magicpath-to-linear` skill already uses `npx` form, so this works fine.
-
-Never suggest `sudo npm install -g` without explicit user acknowledgement — sudo-installed globals cause permission headaches later when the user tries to update or uninstall. If the user says "just use sudo," fine, but flag the caveat once.
-
-After install, verify:
+After install, verify the CLI was wired up correctly:
 
 ```bash
-magicpath-ai info -o json | head -20
-# or if using npx form:
 npx -y magicpath-ai@beta info -o json | head -20
 ```
 
-The `cli.version` field must end in `-beta.N` (e.g. `1.5.0-beta.1`). If it doesn't, the package install ran against the wrong dist-tag — reinstall with `@beta` explicit.
+The `cli.version` field should end in `-beta.N` (e.g. `1.5.0-beta.5`). If MagicPath later promotes the CLI to stable, the skill bundle will track stable too.
+
+**Need the raw CLI globally without the skill bundle?** (Rare — only useful if you're scripting outside Claude Code.) You can still `npm install -g magicpath-ai@beta`, but watch for EACCES on macOS — use nvm/volta/asdf rather than sudo. The skill install above remains the recommended path.
 
 ### Step 2 — Log into MagicPath
 

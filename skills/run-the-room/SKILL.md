@@ -66,7 +66,13 @@ npx -y magicpath-ai@beta info -o json
 npx -y magicpath-ai@beta whoami
 ```
 
-If the CLI is missing or auth is stale, point the user at the **`/install-magicpath-stack`** companion skill — it handles all four pieces (CLI + Mixpanel + Linear + EACCES escape hatches) in one flow. Pause until the user confirms install.
+If the CLI is missing or auth is stale, install MagicPath's official `magicpath` skill — it wraps the CLI install + auth in a single command:
+
+```bash
+npx skills add https://github.com/magicpathai/agent-skills --skill magicpath
+```
+
+For the full Mixpanel + Linear MCP wiring on top of the CLI, defer to the **`/install-magicpath-stack`** companion skill. Pause until the user confirms install.
 
 ## Sprint Flow
 
