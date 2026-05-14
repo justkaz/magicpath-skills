@@ -62,8 +62,8 @@ For every datasource, explain that it's where the user runs A/B tests or has ana
 ### MagicPath CLI
 
 ```bash
-npx -y magicpath-ai@beta info -o json
-npx -y magicpath-ai@beta whoami
+npx -y magicpath-ai info -o json
+npx -y magicpath-ai whoami
 ```
 
 If the CLI is missing or auth is stale, install MagicPath's official `magicpath` skill — it wraps the CLI install + auth in a single command:
@@ -104,16 +104,16 @@ Every run gets its own project so the canvas isn't polluted with components from
 The `magicpath-ai` CLI ships a `create-project` subcommand — use it. **Do not pause for the user to create the project in the web app** unless this command fails.
 
 ```bash
-npx -y magicpath-ai@beta create-project \
+npx -y magicpath-ai create-project \
   --name "Run The Room: <descriptor>" \
   --team "<team-name-or-id>" \
   -o json
 ```
 
 - The command returns a JSON payload — capture `.id` for `--project` flags downstream and `.ownerName` to confirm the team in the user-facing summary.
-- Default `--team` to the user's primary team. If the user belongs to multiple teams (check `npx -y magicpath-ai@beta list-teams -o json`), ask which one before minting.
+- Default `--team` to the user's primary team. If the user belongs to multiple teams (check `npx -y magicpath-ai list-teams -o json`), ask which one before minting.
 - Omit `--team` only when the user explicitly wants a personal project; in that case the project lands under their personal namespace.
-- Verify the response — if `create-project` errors (offline, auth, version drift), only then fall back to the manual flow: ask the user to mint at `https://www.magicpath.ai/projects/new` with the exact `Run The Room: <descriptor>` name, then read the ID from `npx -y magicpath-ai@beta active-project -o json`.
+- Verify the response — if `create-project` errors (offline, auth, version drift), only then fall back to the manual flow: ask the user to mint at `https://www.magicpath.ai/projects/new` with the exact `Run The Room: <descriptor>` name, then read the ID from `npx -y magicpath-ai active-project -o json`.
 
 **Capture and reuse:**
 

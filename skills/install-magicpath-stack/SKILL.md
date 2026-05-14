@@ -7,7 +7,7 @@ description: Install and connect the three prerequisites for MagicPath's Mixpane
 
 The `/mixpanel-to-magicpath-to-linear` skill (and any data-driven MagicPath work) needs three things wired into Claude Code first:
 
-1. **MagicPath CLI** (`magicpath-ai@beta`) — scaffolds and builds components on the canvas
+1. **MagicPath CLI** (`magicpath-ai`) — scaffolds and builds components on the canvas
 2. **Mixpanel MCP** — reads analytics data (events, breakdowns, properties)
 3. **Linear MCP** — creates and updates issues
 
@@ -35,7 +35,7 @@ Run these in parallel and read the results:
 
 ```bash
 # MagicPath CLI presence + version + auth
-npx -y magicpath-ai@beta info -o json 2>&1 | head -30
+npx -y magicpath-ai info -o json 2>&1 | head -30
 
 # Claude Code's registered MCP servers
 claude mcp list 2>&1 || echo "claude mcp cmd unavailable"
@@ -60,12 +60,12 @@ This installs the `magicpath` skill into `~/.claude/skills/` and pulls down the 
 After install, verify the CLI was wired up correctly:
 
 ```bash
-npx -y magicpath-ai@beta info -o json | head -20
+npx -y magicpath-ai info -o json | head -20
 ```
 
-The `cli.version` field should end in `-beta.N` (e.g. `1.5.0-beta.5`). If MagicPath later promotes the CLI to stable, the skill bundle will track stable too.
+The `cli.version` field should be `2.x.y` (current stable, e.g. `2.0.0`). The CLI graduated from beta — older skills/docs may still mention `@beta` (`1.5.0-beta.N`); strip the tag everywhere you see it.
 
-**Need the raw CLI globally without the skill bundle?** (Rare — only useful if you're scripting outside Claude Code.) You can still `npm install -g magicpath-ai@beta`, but watch for EACCES on macOS — use nvm/volta/asdf rather than sudo. The skill install above remains the recommended path.
+**Need the raw CLI globally without the skill bundle?** (Rare — only useful if you're scripting outside Claude Code.) You can still `npm install -g magicpath-ai`, but watch for EACCES on macOS — use nvm/volta/asdf rather than sudo. The skill install above remains the recommended path.
 
 ### Step 2 — Log into MagicPath
 
@@ -159,7 +159,7 @@ If all three return real data, the stack is ready and the user can immediately r
 
 ## Common failure modes
 
-- **`magicpath-ai: command not found`** — the global bin isn't on PATH. Either fix PATH or switch to `npx -y magicpath-ai@beta` in every script/skill reference.
+- **`magicpath-ai: command not found`** — the global bin isn't on PATH. Either fix PATH or switch to `npx -y magicpath-ai` in every script/skill reference.
 - **MCP server shows up in `claude mcp list` but errors with "not authenticated"** — the server is registered but OAuth wasn't completed. Open Claude Code's MCP panel and click Connect for that server.
 - **Mixpanel returns empty results** — might be the wrong workspace. Run `Get-Projects` and confirm the project IDs match what the user expects. For MagicPath, the project_id is `3733276`.
 - **Linear returns `403 — team not found`** — the `save_issue` call is using a team id the user doesn't belong to. The default in the `/mixpanel-to-magicpath-to-linear` skill is MagicPath's team; edit the SKILL.md if the user's on a different team.
