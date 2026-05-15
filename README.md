@@ -1,6 +1,6 @@
 # magicpath-skills
 
-Three Claude Code skills that turn the [MagicPath CLI](https://www.magicpath.ai) into a workflow champion — minting fresh project canvases, pulling analytics + tickets, and shipping ready-to-debate design variations in minutes.
+Three Claude Code or Codex skills that turn the [MagicPath CLI](https://www.magicpath.ai) into a workflow champion — minting fresh project canvases, pulling analytics + tickets, and shipping ready-to-debate design variations in minutes.
 
 | Skill | What it does |
 |---|---|
