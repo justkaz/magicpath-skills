@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422845305776664576",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422845305776664577",
+  "jobId": "283293386524463104-external-agent-422845535637086208",
+  "generatedName": "ready-door-3402",
+  "name": "V5 Dot Grid",
+  "dimensions": {
+    "width": 1100,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "c5734db41e80e837f9700fce2b3c1b20c43f1290a41a20a61da79128b41562ba"
+    },
+    {
+      "path": "src/components/generated/V5DotGrid.tsx",
+      "sha256": "46346f7b8962c5417a78f2d1a2e8c281bfad036acb4185b99b42a14488a597a0"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "928c043861196b46f2a32debc272d0f1e17f6831dc750be7be2a1c05dc2fdf2b"
+    }
+  ],
+  "baseRevisionId": "422845305776664577"
+}

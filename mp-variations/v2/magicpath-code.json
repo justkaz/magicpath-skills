@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422845305780858880",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422845305780858881",
+  "jobId": "283293386524463104-external-agent-422845535389634560",
+  "generatedName": "fierce-stream-7523",
+  "name": "V2 Soft Pastel",
+  "dimensions": {
+    "width": 1100,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "04812d9e9c2ffbf60c94530c6d2cebe5385fc39897e38f5441aafe6674da3eb4"
+    },
+    {
+      "path": "src/components/generated/V2SoftPastel.tsx",
+      "sha256": "74d8a3965599c7cad84079b477fd718dfcbe3b76951f69cff7b0fe3e7202dcb5"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "dd275c00e7d4b5ef25a9a5ca37140f56e854241bd68fb6376df2f7449b8da58b"
+    }
+  ],
+  "baseRevisionId": "422845305780858881"
+}
