@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <M5Timeline />
-    </>
-  ); // %EXPORT_STATEMENT%
+    </>);
+  // %EXPORT_STATEMENT%
 }
 
 export default App;
