@@ -1,11 +1,24 @@
-const theme = 'light';
+import { Theme } from './settings/types';
+import { July2026FamilyCalendar } from './components/generated/July2026FamilyCalendar';
 
-import { JulyCalendarWidget } from './components/generated/JulyCalendarWidget';
+let theme: Theme = 'light';
 
-export default function App() {
+function App() {
+  function setTheme(theme: Theme) {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }
+
+  setTheme(theme);
+
   return (
-    <div className={theme === 'dark' ? 'dark' : ''}>
-      <JulyCalendarWidget />
-    </div>
-  );
+    <>
+      <July2026FamilyCalendar />
+    </>);
+  // %EXPORT_STATEMENT%
 }
+
+export default App;
