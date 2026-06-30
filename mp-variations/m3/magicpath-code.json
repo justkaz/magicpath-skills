@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422846305346420736",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422846305346420737",
+  "jobId": "283293386524463104-external-agent-422846780787552256",
+  "generatedName": "vibrantly-mountain-4925",
+  "name": "M3 Bottom Sheet",
+  "dimensions": {
+    "width": 390,
+    "height": 844
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "ba66596d0b12a65b5430d77c07900a1d5e04a8210e6c73b15b3d3fbed977ef7b"
+    },
+    {
+      "path": "src/components/generated/M3BottomSheet.tsx",
+      "sha256": "82e7b0c53d4968812df6857e6eaef9c20cf59ec82f11f0fb05fd00af352e1c25"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "27e466288e96f15348b786c29991a86893423b7678f20f6fd455688c219a40f7"
+    }
+  ],
+  "baseRevisionId": "422846305346420737"
+}
