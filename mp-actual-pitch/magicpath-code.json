@@ -1,0 +1,37 @@
+{
+  "mode": "edit",
+  "componentId": "423096061419229184",
+  "projectId": "423095042203328512",
+  "selectedRevisionId": "423096061419229185",
+  "jobId": "283293386524463104-external-agent-423096615453212672",
+  "generatedName": "soft-mountain-8344",
+  "name": "Actual Pitch",
+  "dimensions": {
+    "width": 1440,
+    "height": 6400
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "c62d32edafecd32fcdefe3dea68bec2d357b196fba9aece15e0314e55f9974de"
+    },
+    {
+      "path": "src/components/generated/ActualPitch.tsx",
+      "sha256": "b10b402440ccbf356fa7e31c30d492a79a09b0ed43bf7b45e03051e618efb485"
+    },
+    {
+      "path": "src/components/generated/ConversationDemo.tsx",
+      "sha256": "02290804f157a69eecb926f68627176badec078a07f1e646347a2be6dd130d65"
+    },
+    {
+      "path": "src/components/generated/pitchData.ts",
+      "sha256": "700c9b7205065aff3ddb4a0390982c69748ab1b15dfb8a174b6cb676c464160e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "a8577e69451daebc704464592250a8e95ea84f779eaf109e5049fb24ee8b7e21"
+    }
+  ],
+  "baseRevisionId": "423096061419229185"
+}
