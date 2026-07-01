@@ -1,0 +1,45 @@
+{
+  "mode": "edit",
+  "componentId": "423102195924369408",
+  "projectId": "423095042203328512",
+  "selectedRevisionId": "423102195924369409",
+  "jobId": "283293386524463104-external-agent-423102928803487744",
+  "generatedName": "ready-room-5358",
+  "name": "Actual Aggregator Moat",
+  "dimensions": {
+    "width": 1440,
+    "height": 7600
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "ee2491933428115381bc6be1750b90a8f1eec712b89f4b6a7d077e6851627957"
+    },
+    {
+      "path": "src/components/generated/ActualAggregatorMoat.tsx",
+      "sha256": "6ad774a0f0579067e9b7c016ddce3edf5c037da52b710fd07e645a5d91af1053"
+    },
+    {
+      "path": "src/components/generated/Citation.tsx",
+      "sha256": "a74271da771579f5cc80fa247cb2dd06ef992e5a95d720e687f90d843408ed7c"
+    },
+    {
+      "path": "src/components/generated/HandoffCard.tsx",
+      "sha256": "3d742007fa45d5f578c5f1d1dfbaa04e8e9c3a23635894d60532dc6b4497d488"
+    },
+    {
+      "path": "src/components/generated/NetworkDiagram.tsx",
+      "sha256": "1d347e3304812df5717a33577c0821fe2abf8cd52ff239a6b4845be026efe322"
+    },
+    {
+      "path": "src/components/generated/moatData.ts",
+      "sha256": "f5f172c5875897b8b6bda98c10855bd6ed435865586c3c1d42835b44175087f8"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "4215eb81aee63d5c7bdbdb8b6b571d1f77889a8e92936f1a5d049c26676ddabd"
+    }
+  ],
+  "baseRevisionId": "423102195924369409"
+}
