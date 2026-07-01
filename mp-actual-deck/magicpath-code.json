@@ -1,0 +1,37 @@
+{
+  "mode": "edit",
+  "componentId": "423097967969439744",
+  "projectId": "423095042203328512",
+  "selectedRevisionId": "423097967969439745",
+  "jobId": "283293386524463104-external-agent-423098539233652736",
+  "generatedName": "zealously-soil-9742",
+  "name": "Actual Pitch Deck",
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "eed514329abc4becc5f6f67305fbbb056dfb5ee139f32ac8ae037581d19065b8"
+    },
+    {
+      "path": "src/components/generated/ActualPitchDeck.tsx",
+      "sha256": "7349797d0709ffb5c536632ff196f12af9b02e489a7a64332443fc481cbb0c58"
+    },
+    {
+      "path": "src/components/generated/RefinementDemo.tsx",
+      "sha256": "f4d7452d3d3d4ec3d5d443d680dd8b3b9239906a20773d28b3271d18f38c136c"
+    },
+    {
+      "path": "src/components/generated/deckData.ts",
+      "sha256": "788214095714a427a375a8bb2387c228807c8d3c85f4b3525ab3449f021a525c"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "76b7308baa3635c2996a82d96682aebf5ff39b10af5db2e5296f405bbcd3c10e"
+    }
+  ],
+  "baseRevisionId": "423097967969439745"
+}
