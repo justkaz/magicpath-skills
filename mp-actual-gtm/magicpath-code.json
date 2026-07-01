@@ -1,0 +1,45 @@
+{
+  "mode": "edit",
+  "componentId": "423100712491290624",
+  "projectId": "423095042203328512",
+  "selectedRevisionId": "423100712491290625",
+  "jobId": "283293386524463104-external-agent-423101556611776512",
+  "generatedName": "fierce-hill-3769",
+  "name": "Actual GTM Strategy",
+  "dimensions": {
+    "width": 1440,
+    "height": 7200
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "7c536a5f0012784851854d25457789d3bcd5ee80ac029ef6a8e6815ce18bdcaa"
+    },
+    {
+      "path": "src/components/generated/ActualGTMStrategy.tsx",
+      "sha256": "6d739ae004d993cb5d72d9cdb9ed47d5dcf87ceab0e4ff65ffae54101cf7c090"
+    },
+    {
+      "path": "src/components/generated/Citation.tsx",
+      "sha256": "64f53f2760554146b984dcd427aba61bb915146c918e523c34284ecea14c37cb"
+    },
+    {
+      "path": "src/components/generated/MarketMapTable.tsx",
+      "sha256": "6ffd1656db450a41af0432c86855b3f5dcb24dbf5eb6dfe028fa40b933939cae"
+    },
+    {
+      "path": "src/components/generated/PersonaSwitcher.tsx",
+      "sha256": "933a4db666d8f9e80c330bfd2876c46565410814e0622e9e07814f226ae0739c"
+    },
+    {
+      "path": "src/components/generated/gtmData.ts",
+      "sha256": "286b9f3fdca232646948986a075f2e321db294e649d45d6c1cc4e742a5446602"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "f02f52f792b19e05dd78ecc666225701b74075be4efe7d7a6374ab00109754db"
+    }
+  ],
+  "baseRevisionId": "423100712491290625"
+}

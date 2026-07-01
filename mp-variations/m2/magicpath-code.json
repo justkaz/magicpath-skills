@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422846305430302720",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422846305430302721",
+  "jobId": "283293386524463104-external-agent-422846780670087168",
+  "generatedName": "lively-breeze-9882",
+  "name": "M2 Week Strip",
+  "dimensions": {
+    "width": 390,
+    "height": 844
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "43ba8714add98dacbb3a3cde570d5b487a92af361340213edd09bd96e8f03ebe"
+    },
+    {
+      "path": "src/components/generated/M2WeekStrip.tsx",
+      "sha256": "1d61b92f545c15b0980f4385dcd277120485259e580c02d4e65344a9dec05ff5"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "ed348b6c797c5406b8f4370d1c0e9e5b530ba2f1fae79082ebdf0ea652156fd2"
+    }
+  ],
+  "baseRevisionId": "422846305430302721"
+}

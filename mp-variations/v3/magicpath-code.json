@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422845306204471296",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422845306204471297",
+  "jobId": "283293386524463104-external-agent-422845535838437376",
+  "generatedName": "breezily-dawn-9650",
+  "name": "V3 Brutalist",
+  "dimensions": {
+    "width": 1100,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "60f4ee5dbd1e5bf4042e5160b6531c67fed54b2c407a34cd7a4bed2af735a971"
+    },
+    {
+      "path": "src/components/generated/V3Brutalist.tsx",
+      "sha256": "8af934664c010806c006d5e628c15996d3dbdc5604883339b51bc63b4e498b18"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "2fcf43b8a665230be1a9392b116cdb7ea254213c18d3469862739d0a238bf16f"
+    }
+  ],
+  "baseRevisionId": "422845306204471297"
+}

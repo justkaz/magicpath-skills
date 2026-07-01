@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422846305619030016",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422846305619030017",
+  "jobId": "283293386524463104-external-agent-422846780275838976",
+  "generatedName": "wise-castle-6442",
+  "name": "M1 Agenda List",
+  "dimensions": {
+    "width": 390,
+    "height": 844
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "d00b33d0d9b8253f6503bbbabf76390f5a37dd5af5f8c09ba640b6b3f8f79945"
+    },
+    {
+      "path": "src/components/generated/M1AgendaList.tsx",
+      "sha256": "bf91b45a885b6365556b3a2db0a89c083e4fe9d4fedbdd7b967fe982f4a7e558"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "5c8177326e1372eba8833b59f57aeb48504e68c1fdefd83949a9a458c70a71f4"
+    }
+  ],
+  "baseRevisionId": "422846305619030017"
+}

@@ -1,0 +1,37 @@
+{
+  "mode": "edit",
+  "componentId": "422843626964525056",
+  "projectId": "422843624217272320",
+  "selectedRevisionId": "422844059393097728",
+  "baseRevisionId": "422844059393097728",
+  "jobId": "283293386524463104-external-agent-422844176707788800",
+  "generatedName": "ready-month-7911",
+  "name": "July 2026 Family Calendar",
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "1b67bf55625dc1f90d8b98878ee36d27098e77eec09b75052f79467e8d8e7ff7"
+    },
+    {
+      "path": "src/components/generated/July2026FamilyCalendar.tsx",
+      "sha256": "76d89f16e3c6c87afb3a8ae03933e6d586c3db42d87268e619be8abb33556b91"
+    },
+    {
+      "path": "src/components/generated/JulyCalendarWidget.tsx",
+      "sha256": "c5e05126ac0219534d1c85c6c65f1fefbd9edabcc05ddee8a1008bc74bae5cf9"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "4a24bb527af0d22672d7988e43adf8061b9213115ae3f22a5cf40f4a0229d9e5"
+    }
+  ],
+  "dimensions": {
+    "width": 1200,
+    "height": 920
+  }
+}

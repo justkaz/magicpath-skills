@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422846305476415488",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422846305476415489",
+  "jobId": "283293386524463104-external-agent-422846780691087360",
+  "generatedName": "sweetly-pool-7256",
+  "name": "M4 Swipe Cards",
+  "dimensions": {
+    "width": 390,
+    "height": 844
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "d6eaacaf2115e88554b2da7938e77dd0b9d34855b819d46a75a8772d35c2d576"
+    },
+    {
+      "path": "src/components/generated/M4SwipeCards.tsx",
+      "sha256": "b2301ece197c8bdccf993b88c27300a8390dfe5eecfb1508430d852a0dd84f7b"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "7c5dd1f45cad4ed0634ce64fb3b6588b7d862f76d3b9767c782fa9228cd23c72"
+    }
+  ],
+  "baseRevisionId": "422846305476415489"
+}

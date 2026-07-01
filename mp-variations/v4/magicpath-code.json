@@ -1,0 +1,33 @@
+{
+  "mode": "edit",
+  "componentId": "422845305797644288",
+  "projectId": "422845282376630272",
+  "selectedRevisionId": "422845305797644289",
+  "jobId": "283293386524463104-external-agent-422845535309955072",
+  "generatedName": "sturdily-river-7002",
+  "name": "V4 Editorial",
+  "dimensions": {
+    "width": 1100,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "a4b3e2f3cdfdb40e5d43ba8bf4a35adc4c7b1d7cb53132232fa232827fa53f59"
+    },
+    {
+      "path": "src/components/generated/V4Editorial.tsx",
+      "sha256": "f3592beeab267e2eaa2b254290ffff4db4613fd49b908b60998aecac2f81b3fd"
+    },
+    {
+      "path": "src/components/generated/calendarData.ts",
+      "sha256": "973ccb5ccf6b8f5e6ee1d83cde06e1ade3e3352cc82ccf3f3a0e77cdade9253e"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "214f324812a81c635ebbe59fea5b9ffcace9dbf6a66f3315013302c099102b21"
+    }
+  ],
+  "baseRevisionId": "422845305797644289"
+}
